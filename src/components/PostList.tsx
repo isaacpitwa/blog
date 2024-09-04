@@ -35,11 +35,11 @@ const PostList: React.FC = () => {
       <ul className="mt-4 space-y-4">
         {posts.map((post) => (
           <li key={post.id} className="border p-4 rounded">
-            <h2 className="text-xl font-semibold">{post.title}</h2>
+            <Link href={`/posts/${post.id}`} className="text-blue-500 hover:text-blue-700"><h2 className="text-xl font-semibold text-black hover:text-gray-500">{post.title}</h2></Link>
             <p className="mt-2">{post.body}</p>
             <div className="mt-4 space-x-2">
               <Link
-                href={`/posts/${post.id}`}
+                href={`/posts/edit/${post.id}`}
                 className="text-blue-500 hover:text-blue-700"
               >
                 Edit

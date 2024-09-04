@@ -26,3 +26,7 @@ export const updatePost = async (post: Post): Promise<Post> => {
 export const deletePost = async (id: number): Promise<void> => {
   await axios.delete(`${API_BASE_URL}/posts/${id}`);
 };
+export const fetchComments = async (postId: number): Promise<Comment[]> => {
+    const response = await axios.get(`${API_BASE_URL}/posts/${postId}/comments`);
+    return response.data;
+  };
