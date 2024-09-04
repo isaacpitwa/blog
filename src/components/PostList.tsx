@@ -17,15 +17,10 @@ const PostList: React.FC = () => {
     dispatch(getPosts());
   }, [dispatch]);
                                                                                                                                                                                                                                                                                         
-  const handleDelete = (id: number) => {
-    dispatch(removePost(id));
-  };
-
   const handleDeleteClick = (id: number) => {
     setPostToDelete(id);
     setIsDeleteModalOpen(true);
   };
-
   const handleDeleteConfirm = () => {
     if (postToDelete !== null) {
       dispatch(removePost(postToDelete));

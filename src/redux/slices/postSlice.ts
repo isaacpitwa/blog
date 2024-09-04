@@ -3,7 +3,7 @@ import { Post } from '@/types/post';
 import { Comment } from '@/types/comment';
 import { fetchPosts, fetchPost, createPost, updatePost, deletePost, fetchComments } from '@/utils/api';
 
-interface PostState {
+export interface PostState {
     posts: Post[];
     currentPost: Post | null;
     loading: boolean;
