@@ -4,7 +4,7 @@ This is a simple CRUD application built with Next.js, Redux, and TypeScript. It 
 
 ## Hosted Link
 
-Check out the live application [here](#).
+Check out the live application [here](https://march-blog-test.vercel.app).
 
 ## Technologies Used
 
