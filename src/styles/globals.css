@@ -32,6 +32,8 @@ a:hover {
 
 button {
   cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
@@ -54,6 +56,15 @@ input, textarea {
 .btn {
   display: inline-block;
   background-color: #0070f3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn-nav {
+  display: inline-block;
+  background-color: rgb(156 163 175);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 4px;
