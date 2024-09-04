@@ -33,7 +33,7 @@ const PostForm: React.FC<PostFormProps> = ({ post }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 h-screen">
       <div>
         <label htmlFor="title" className="block mb-1">
           Title

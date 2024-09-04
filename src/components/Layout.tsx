@@ -7,9 +7,9 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div >
-      <header className="py-4 flex space-x-4 items-center fixed z-50 bg-gray-300 w-screen px-48">
-        <h1 className="text-3xl font-bold mb-0 ">Blog App</h1>
+    <div>
+      <header className="py-4 flex space-x-4 items-center fixed z-50 bg-gray-300 w-screen px-44">
+        <h1 className="text-3xl font-bold mb-0 ">BlogApp</h1>
         <nav className="flex-1">
           <ul className="flex space-x-4 items-center justify-center">
             <li>
@@ -33,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </ul>
         </nav>
       </header>
-      <main className="pt-24 px-48 ">{children}</main>
+      <main className="pt-24 max-w-5xl mx-auto">{children}</main>
     </div>
   );
 };
