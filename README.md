@@ -1,4 +1,4 @@
-# Post CRUD Application
+# Blog Application
 
 This is a simple CRUD application built with Next.js, Redux, and TypeScript. It allows users to interact with the JSONPlaceholder API for creating, reading, updating, and deleting posts.
 
@@ -30,13 +30,13 @@ This application utilizes the JSONPlaceholder API for handling post data. You ca
 1. Clone the repository.
 
    ```bash
-   git clone https://github.com/yourusername/my-crud-app.git
+   git clone https://github.com/isaacpitwa/blog.git
    ```
 
 2. Navigate to the project directory.
 
    ```bash
-   cd my-crud-app
+   cd blog
    ```
 
 3. Install the dependencies.
