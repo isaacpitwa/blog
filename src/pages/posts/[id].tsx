@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AppDispatch, RootState } from "@/redux/store";
 import { getPost, getComments } from "@/redux/slices/postSlice";
 import CommentList from "@/components/CommentList";
+import { MdEdit, MdOutlineKeyboardBackspace } from "react-icons/md";
 
 const PostDetails: React.FC = () => {
   const router = useRouter();
@@ -30,11 +31,13 @@ const PostDetails: React.FC = () => {
   return (
     <div className="max-w-2xl mx-auto mt-4">
       <div className="flex space-x-4 mb-12 justify-between">
-        <Link href="/" className="btn-nav bg-transparent hover:bg-gray-600 b">
-          Back to List
+        <Link href="/" className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400 flex items-center space-x-2">
+        <MdOutlineKeyboardBackspace />
+          <label >Back to List</label>
         </Link>
-        <Link href={`/posts/edit/${currentPost.id}`} className="btn">
-          Edit Post
+        <Link href={`/posts/edit/${currentPost.id}`} className="flex items-center rounded space-x-2 bg-blue-800 hover:bg-blue-400 px-4 py-2 text-white">
+         <MdEdit />
+          <label>Edit Post</label>
         </Link>
       </div>
       <h1 className="text-3xl font-bold mb-4">{currentPost.title}</h1>
